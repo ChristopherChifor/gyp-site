@@ -6,17 +6,19 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Inter var"', ...defaultTheme.fontFamily.sans],
+        sans: ['Lexend', ...defaultTheme.fontFamily.sans],
       },
       colors: {
         accent: {
-          darkest: "#63656A",
-          dark: "#90a4ae",
-          DEFAULT: "#ec7615",
-          hover: "#ED8C5F",
-          light: "#ec76151A",
-          light_hover: "#ec76151A",
-          lightest: "#fafafa",
+          darkest: "#585858",
+          dark: "#F18D19",
+          DEFAULT: "#0B66A4",
+          hover: "#0D7CC8",
+          light: "#ECC30A",
+          light_hover: "#ECCF4A",
+          lightest: "#EEEEEE",
+          red: "#E71D2E",
+          black: "#222222",
         },
       },
     },
