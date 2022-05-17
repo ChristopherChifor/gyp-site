@@ -21,8 +21,8 @@ export const getNavigation = (routes) => {
   for (const route of routes) {
     if (route.hidden) continue;
     const baseRoute = route.path.split("/")[1];
-    const indexBaseRoute = navItems.findIndex((item) => item.path === `/${baseRoute}`);
-
+    const indexBaseRoute = navItems.findIndex((item) => item.path === `${baseRoute}`);
+    console.debug(baseRoute, indexBaseRoute, route.path);
     if (indexBaseRoute === -1) {
       navItems.push({
         path: baseRoute,
