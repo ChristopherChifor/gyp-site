@@ -44,17 +44,9 @@
 </template>
 
 <script setup>
-<<<<<<< HEAD
-import SplitCTA from '@/components/layouts/cta/SplitCTA.vue'
-import SimpleStripedTable from "../../../components/app/tables/SimpleStripedTable.vue";
-import Container from "../../../components/layouts/Container.vue";
-import Header from "@/components/base/Header.vue";
-</script>
-=======
 import SimpleStripedTable from '../../../components/app/tables/SimpleStripedTable.vue'
 import Container from '../../../components/layouts/Container.vue'
 import SplitCTA from '../../../components/layouts/cta/SplitCTA.vue'
 import Header from '../../../components/base/Header.vue'
 
 </script>
->>>>>>> c45cad9a4f4c957d18c8b4892b485d411c9cd4ba
