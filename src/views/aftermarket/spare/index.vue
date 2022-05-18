@@ -37,23 +37,78 @@
     </p>
     <h2 class="pt-8">Some of our popular spare parts, include:</h2>
     <div class="grid grid-cols-4 gap-6">
-      <div class="bg-accent">
-        <div class="text-white p-6">
-          <h4>Paper Delivery System</h4>
-          <ArrowList :items="[content[0], content[0]]" class="mb-6 text-white" />
+      <div>
+        <div class="bg-accent">
+          <div class="text-white p-6 h-auto">
+            <h4>Paper Delivery System</h4>
+            <ArrowList
+              :items="[content[0], content[0]]"
+              class="mb-6 text-white"
+              white
+            />
+          </div>
         </div>
       </div>
-      <div class="bg-accent-dark">
-        <div class="text-white p-6"><h4>Paper Delivery System</h4></div>
+      <div>
+        <div class="bg-accent-dark">
+          <div class="text-white p-6">
+            <h4>Paper Delivery System</h4>
+            <ArrowList
+              :items="[content[0], content[0], content[0], content[0]]"
+              class="mb-6 text-white"
+              white
+            />
+          </div>
+        </div>
       </div>
-      <div class="bg-accent">
-        <div class="text-white p-6"><h4>Board Handling System</h4></div>
+      <div>
+        <div class="bg-accent">
+          <div class="text-white p-6">
+            <h4>Board Handling System</h4>
+            <ArrowList
+              :items="[
+                content[0],
+                content[0],
+                content[0],
+                content[0],
+                content[0],
+                content[0],
+              ]"
+              class="mb-6 text-white"
+              white
+            />
+          </div>
+        </div>
       </div>
-      <div class="bg-accent-dark">
-        <div class="text-white p-6"><h4>Dryer</h4></div>
+      <div>
+        <div class="bg-accent-dark">
+          <div class="text-white p-6">
+            <h4>Dryer</h4>
+            <ArrowList :items="[content[0], content[0],content[0], content[0]]" class="mb-6" white />
+          </div>
+        </div>
       </div>
     </div>
   </Container>
+
+  <div class="relative">
+    <img
+      src="@/assets/images/writing.png"
+      alt=""
+      class="object-cover w-full h-full absolute inset-0"
+    />
+    <div class="absolute inset-0 bg-accent-dark mix-blend-multiply"></div>
+    <Container class="relative">
+      <div class="text-center flex items-center flex-col">
+        <h2 class="text-white">Need a spare parts quote?</h2>
+        <router-link
+          class="btn btn-xl btn-light text-color-accent-dark"
+          :to="{ name: 'contact' }"
+          >get in touch
+        </router-link>
+      </div>
+    </Container>
+  </div>
 </template>
 
 <script setup>

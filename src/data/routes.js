@@ -19,7 +19,7 @@ export const ROUTES_SOURCE = [
     name: "equipment",
     component: () => import("@/views/equipment/index.vue"),
     meta: { title: "Equipment" },
-  }, // here
+  },
   {
     path: "/equipment/overview",
     label: "equipment/overview",

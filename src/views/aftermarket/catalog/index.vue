@@ -35,7 +35,6 @@
       ></template
     >
   </Split>
-  <SplitCTA />
 
   <Container class="bg-accent-lightest">
     <h3>Frequently Asked Questions</h3>
@@ -59,7 +58,6 @@ import ArrowList from "../../../components/base/ArrowList.vue";
 import Split from "../../../components/layouts/Split.vue";
 import Container from "../../../components/layouts/Container.vue";
 import Header from "@/components/base/Header.vue";
-import SplitCTA from "@/components/layouts/cta/SplitCTA.vue";
 
 const content = [
   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, accusamus!",
