@@ -1,13 +1,5 @@
 <template>
   <Header />
-<<<<<<< HEAD
-</template>
-
-<script setup>
-import Header from '../../../components/base/Header.vue'
-
-</script>
-=======
 
   <Container>
     <h2>Step Into Our Boots</h2>
@@ -61,4 +53,3 @@ import SimpleStripedTable from "../../../components/app/tables/SimpleStripedTabl
 import Container from "../../../components/layouts/Container.vue";
 import Header from "@/components/base/Header.vue";
 </script>
->>>>>>> 556083c331df83dc4aac0f7ed3be84e3505b6e56
