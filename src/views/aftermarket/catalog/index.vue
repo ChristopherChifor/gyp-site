@@ -16,8 +16,18 @@
   <Split title="Accurate and Secure" flip>
     <img src="@/assets/images/woman-hardhat.png" alt="woman hardhat" />
     <template v-slot:extra-content>
-    <ArrowList :items="content" class="mb-6" />
-    <p>hello world</p>
+      <ArrowList :items="content" class="mb-6" />
+      <p class="pb-2">
+        Please reach out to us today for more information, to see a demo or to
+        get enrolled: <b>Call: </b>
+        <a class="text-accent" href="tel:+1 905-567-2000 ext.324"
+          >+1 905-567-2000 ext.324</a
+        >
+        or <b>Email: </b>
+        <a class="text-accent" href="mailto:parts@gyptech.ca"
+          >parts@gyptech.ca</a
+        >
+      </p>
       <router-link
         class="btn btn-xl btn-light text-color-accent-dark"
         :to="{ name: 'contact' }"
@@ -29,7 +39,11 @@
 
   <Container class="bg-accent-lightest">
     <h3>Frequently Asked Questions</h3>
-    <div v-for="(f, i) in faq" :key="i" class="grid md:grid-cols-5 gap-4 border-t border-accent-darkest/30 py-6">
+    <div
+      v-for="(f, i) in faq"
+      :key="i"
+      class="grid md:grid-cols-5 gap-4 border-t border-accent-darkest/30 py-6"
+    >
       <div class="md:col-span-2">
         <h4 class="font-semibold">{{ f.title }}</h4>
       </div>
