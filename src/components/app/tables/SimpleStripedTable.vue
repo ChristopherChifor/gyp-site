@@ -3,10 +3,10 @@
     <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
       <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
         <div
-          class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
+          class="shadow overflow-hidden border border-offblack sm:rounded-lg"
         >
-          <table class="min-w-full divide-y divide-gray-200">
-            <thead class="bg-gray-50">
+          <table class="min-w-full divide-y divide-offblack">
+            <thead class="bg-accent/20">
               <tr>
                 <th
                   v-for="(header, headerIdx) in headers"
@@ -17,32 +17,22 @@
                     py-3
                     text-left text-xs
                     font-medium
-                    text-gray-500
+                    text-offblack
                     uppercase
                     tracking-wider
-                    ${headerIdx === 0 && 'text-gray-900 font-semibold'}
+                    ${headerIdx === 0 && 'text-offblack font-semibold'}
                   `"
                 >
                   {{ header.label }}
                 </th>
               </tr>
             </thead>
-            <tbody>
-              <tr
-                v-for="(item, itemIdx) in items"
-                :key="item.email"
-                :class="`${
-                  itemIdx % 2 === 0 ? 'bg-white' : 'bg-gray-50'
-                } transition hover:bg-gray-200`"
-              >
+            <tbody class="divide-y divide-offblack">
+              <tr v-for="(item, itemIdx) in items" :key="itemIdx">
                 <td
                   v-for="(value, valueIdx) in Object.values(item)"
                   :key="valueIdx"
-                  :class="`px-6 py-4 whitespace-nowrap text-sm ${
-                    valueIdx === 0
-                      ? 'text-gray-900 font-medium'
-                      : 'text-gray-500'
-                  }`"
+                  :class="`px-6 py-4 whitespace-nowrap text-sm text-offblack`"
                 >
                   {{ value }}
                 </td>
@@ -58,34 +48,38 @@
 <script>
 const defaultItems = [
   {
-    name: "Jane Cooper",
-    title: "Regional Paradigm Technician",
-    role: "Admin",
-    email: "jane.cooper@example.com",
+    name: '4.25"',
+    title: '1.75", 2.00", 2.25", 2.50", 2.75", 3.00"',
+    role: '24"',
+    email: '0.15"-0.18"',
   },
   {
-    name: "Cody Fisher",
-    title: "Product Directives Officer",
-    role: "Owner",
-    email: "cody.fisher@example.com",
+    name: '5.56"',
+    title: '2.50", 2.75", 3.00", 3.25", 3.50", 3.75" 4.00"',
+    role: '31", 35"',
+    email: '0.18"-0.21"',
+  },
+  {
+    name: '6.63"',
+    title: '3.00", 3.25", 3.50", 3.75", 4.00", 4.25", 4.50", 5.00", 5.25"',
+    role: '44.25"',
+    email: '0.23"-0.26"',
   },
 ];
-
 const defaultHeaders = [
   {
-    label: "Name",
+    label: "inlet size (dia.)",
   },
   {
-    label: "Title",
+    label: "outlet size (dia.)",
   },
   {
-    label: "Email",
+    label: "overall length",
   },
   {
-    label: "Role",
+    label: "standard thickness range",
   },
 ];
-
 export default {
   props: {
     items: {
