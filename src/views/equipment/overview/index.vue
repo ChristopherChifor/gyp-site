@@ -1,8 +1,6 @@
 <template>
     <Header />
     <Container>
-        <div class="todo">How to add list inside split + sizing</div>
-
         <Split title="Depending on your needs, Gyptech offers the following:"
             description="Teck Centennial Public Library provides free access to information, ideas, resources, facilities, services and programs that enrich the lives and empower the citizens of Kirkland Lake."
             flip>
