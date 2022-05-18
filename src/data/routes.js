@@ -207,7 +207,7 @@ export const ROUTES_SOURCE = [
     label: "careers/post",
     name: "careers/post",
     component: () => import("@/views/careers/post/index.vue"),
-    meta: { title: "" },
+    meta: { title: "equi" },
   },
   {
     path: "/contact",
