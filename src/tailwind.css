@@ -1,12 +1,12 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* #region - Typography -  */
 * {
-  font-family: 'Lexend', sans-serif;
+  font-family: "Lexend", sans-serif;
 }
 
 h1 {
@@ -73,7 +73,7 @@ select {
 .btn {
   @apply w-max inline-flex items-center border border-transparent font-medium shadow-sm transition
         text-white bg-accent hover:bg-accent-hover focus:outline-none focus:ring-2 
-        focus:ring-offset-2 focus:ring-accent;
+        focus:ring-offset-2 focus:ring-accent uppercase;
 }
 
 .btn-dark {
@@ -101,7 +101,7 @@ select {
 }
 
 .btn-xl {
-  @apply px-4 py-2 text-base md:px-6 md:py-3 md:text-lg rounded-md;
+  @apply px-4 py-2 text-base md:px-6 md:py-3 md:text-lg rounded-bl-md rounded-tr-md;
 }
 
 /* #endregion - Inputs -  */
@@ -111,8 +111,7 @@ select {
 /* #region - Nav - */
 
 .nav-item {
-  @apply 
-              rounded-md
+  @apply rounded-md
               inline-flex
               items-center
               text-base

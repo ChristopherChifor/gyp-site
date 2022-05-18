@@ -16,7 +16,6 @@ export default {
     },
     description: {
       type: String,
-      default: "Description",
     },
     flip: {
       type: Boolean,
