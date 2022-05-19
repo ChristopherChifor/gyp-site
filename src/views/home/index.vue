@@ -31,28 +31,28 @@ import Header from "@/components/base/Header.vue";
 
 const glance = [
   {
-    image: "@/assets/images/glance/1.png",
+    image: "@/assets/images/fence.png",
     title: "Wallboard & plaster Plants",
     description:
       "Turnkey or upgrade, our complete solutions take you from raw gypsum to a superior finished product.",
     path: "#",
   },
   {
-    image: "@/assets/images/glance/1.png",
+    image: "@/assets/images/fence.png",
     title: "Why Choose Gyptech?",
     description:
       "Our plants lead the industry for a reason; superior machinery backed by seasoned professionals.",
     path: "#",
   },
   {
-    image: "@/assets/images/glance/1.png",
+    image: "@/assets/images/fence.png",
     title: "Gyptech Equipment",
     description:
       "We supply only equipment that adheres to our strict standard of quality and performance.",
     path: "#",
   },
   {
-    image: "@/assets/images/glance/1.png",
+    image: "@/assets/images/fence.png",
     title: "Gyptech Replacement Parts",
     description:
       "Gyptech is making it easier to order spare parts. Learn more about our customer service department.",
