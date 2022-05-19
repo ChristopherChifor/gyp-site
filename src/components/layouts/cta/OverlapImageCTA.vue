@@ -16,7 +16,7 @@
               class="aspect-w-10 aspect-h-6 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1"
             >
               <img
-                class="object-cover object-center rounded-3xl shadow-2xl"
+                class="object-cover object-center rounded-lg shadow-2xl"
                 src="@/assets/images/cutter.png"
                 alt=""
               />
@@ -25,78 +25,26 @@
         </div>
 
         <div
-          class="relative bg-accent lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center"
+          class="relative bg-accent-dark lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:grid lg:grid-cols-10 lg:items-center"
         >
           <div
-            class="hidden absolute inset-0 overflow-hidden rounded-3xl lg:block"
+            class="hidden absolute inset-0 overflow-hidden rounded lg:block"
             aria-hidden="true"
           >
-            <svg
-              class="absolute bottom-full left-full transform translate-y-1/3 -translate-x-2/3 xl:bottom-auto xl:top-0 xl:translate-y-0"
-              width="404"
-              height="384"
-              fill="none"
-              viewBox="0 0 404 384"
-              aria-hidden="true"
+            <img
+              src="@/assets/icons/cicuitry.svg"
+              class="absolute top-0"
+              alt=""
+            />
+            <div
+              class="absolute bottom-0 right-0 translate-y-2/3 h-96 w-[30rem] transform rotate-180"
             >
-              <defs>
-                <pattern
-                  id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    class="text-accent-dark opacity-30"
-                    fill="currentColor"
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width="404"
-                height="384"
-                fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
+              <img
+                src="@/assets/icons/cicuitry.svg"
+                alt=""
+                class="transform translate-y-1/2"
               />
-            </svg>
-            <svg
-              class="absolute top-full transform -translate-y-1/3 -translate-x-1/3 xl:-translate-y-1/2"
-              width="404"
-              height="384"
-              fill="none"
-              viewBox="0 0 404 384"
-              aria-hidden="true"
-            >
-              <defs>
-                <pattern
-                  id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d"
-                  x="0"
-                  y="0"
-                  width="20"
-                  height="20"
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect
-                    x="0"
-                    y="0"
-                    width="4"
-                    height="4"
-                    class="text-indigo-500"
-                    fill="currentColor"
-                  />
-                </pattern>
-              </defs>
-              <rect
-                width="404"
-                height="384"
-                fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)"
-              />
-            </svg>
+            </div>
           </div>
           <div
             class="relative max-w-lg mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6"

@@ -1,33 +1,33 @@
 <template>
   <HeroImageOverlay>
-    <div class="max-w-xl">
-      <h1 class="text-accent-lightest leading-tight">Turn-Key Solutions</h1>
-      <h2 class="text-accent-lightest mt-2">
-        for Wallboard Manufacturing.
-        <p class="text-accent-lightest mt-2">
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo ad non deserunt suntui irure qui lorem.
-        </p>
-      </h2>
-    </div>
+    <h1 class="text-accent-lightest leading-tight">
+      Turn-Key Solutions <br />
+      <span class="font-normal">for Wallboard Manufacturing</span>
+    </h1>
+    <h2 class="text-accent-lightest mt-2"></h2>
+    <p class="text-accent-lightest mt-4 mb-8 max-w-lg">
+      Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+      cupidatat commodo ad non deserunt suntui irure qui lorem.
+    </p>
+    <router-link to="#" class="btn btn-light btn-xl"> learn more </router-link>
   </HeroImageOverlay>
 
   <OverlapImageCTA />
-  
+
   <Container class="bg-accent-lightest">
-    <h2>At A Glance</h2>
-    <div class="grid grid-cols-4 gap-8">
+    <h2 class="mt-4">At A Glance</h2>
+    <div class="grid lg:grid-cols-4 gap-8 sm: grid-cols-2">
       <div v-for="(item, index) in glance" :key="index">
-        <img :src="item.image" alt="" />
-        <h3 class="text-lg mb-1">{{ item.title }}</h3>
-        <p class="text-sm max-w-sm">
+        <img class="rounded-lg" :src="item.image" alt="" />
+        <h3 class="text-lg mb-4 mt-4">{{ item.title }}</h3>
+        <p class="text-sm max-w-sm mb-4">
           {{ item.description }}
         </p>
-        <div class="todo">do paths and images</div>
-        <router-link :to="{ name: item.path }">
-          <p class="text-sm max-w-sm">
-          Learn More
-          </p>
+        <router-link
+          class="text-sm max-w-sm text-accent flex items-center mb-16"
+          :to="{ name: item.path }"
+        >
+          Learn More<ArrowRightIcon class="h-4 w-4 ml-2" />
         </router-link>
       </div>
     </div>
@@ -38,6 +38,7 @@
 import Container from "@/components/layouts/Container.vue";
 import HeroImageOverlay from "@/components/layouts/hero/HeroImageOverlay.vue";
 import OverlapImageCTA from "@/components/layouts/cta/OverlapImageCTA.vue";
+import { ArrowRightIcon } from "@heroicons/vue/solid";
 
 const getImage = (name) => {
   return new URL(`../../assets/${name}`, import.meta.url).href;
