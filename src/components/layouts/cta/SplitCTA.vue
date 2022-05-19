@@ -40,14 +40,14 @@
     <div class="max-w-7xl relative px-4 sm:px-6 lg:px-8 mx-auto">
       <div class="md:p-6 grid md:grid-cols-2">
         <div class="h-96 md:h-full text-center sm: pt-32 md: pt-3">
-          <h2>
+          <h2 class="text-white">
             Have a question? <br />
             We've got the answer
           </h2>
           <button class="btn btn-xl btn-light">GET IN TOUCH</button>
         </div>
         <div class="h-96 md:h-full text-center sm: pt-32 md: pt-3">
-          <h2>Register for our <br>online catalog</h2>
+          <h2 class="text-white">Register for our <br>online catalog</h2>
           <button class="btn btn-xl btn-light">LEARN MORE</button>
         </div>
       </div>
