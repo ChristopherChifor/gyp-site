@@ -1,6 +1,6 @@
 <template>
   <HeroImageOverlay>
-    <div class="max-w-xl">
+    <div class="max-w-xl bg-red-500">
       <h1 class="text-accent-lightest leading-tight">vancouver's premier Luxury car service</h1>
       <p class="text-accent-lightest mt-2">
         Professional team of chauffeurs providing exceptional services.
@@ -15,7 +15,7 @@
     <h2>At A Glance</h2>
     <div class="grid grid-cols-4 gap-8">
       <div v-for="(item, index) in glance" :key="index">
-        <img src="{{item.image}}" alt="" />
+        <img :src="item.image" alt="" />
         <h3 class="text-lg mb-1">{{ item.title }}</h3>
         <p class="text-sm max-w-sm">
           {{ item.description }}
