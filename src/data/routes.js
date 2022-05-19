@@ -189,17 +189,17 @@ export const ROUTES_SOURCE = [
     meta: { title: "News" },
   },
   {
-    path: "/news/post",
-    label: "news/post",
-    name: "news/post",
-    component: () => import("@/views/news/post/index.vue"),
-    meta: { title: "News" },
-  },
-  {
     path: "/news/overview",
     label: "news/overview",
     name: "news/overview",
     component: () => import("@/views/news/overview/index.vue"),
+    meta: { title: "News" },
+  },
+  {
+    path: "/news/post",
+    label: "news/post",
+    name: "news/post",
+    component: () => import("@/views/news/post/index.vue"),
     meta: { title: "News" },
   },
   {
@@ -210,18 +210,18 @@ export const ROUTES_SOURCE = [
     meta: { title: "News" },
   },
   {
-    path: "/careers/post",
-    label: "careers/post",
-    name: "careers/post",
-    component: () => import("@/views/careers/post/index.vue"),
-    meta: { title: "equi" },
-  },
-  {
     path: "/careers/overview",
     label: "careers/overview",
     name: "careers/overview",
     component: () => import("@/views/careers/overview/index.vue"),
     meta: { title: "Careers" },
+  },
+  {
+    path: "/careers/post",
+    label: "careers/post",
+    name: "careers/post",
+    component: () => import("@/views/careers/post/index.vue"),
+    meta: { title: "Post" },
   },
   {
     path: "/contact",
