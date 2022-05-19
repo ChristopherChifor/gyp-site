@@ -7,9 +7,12 @@
             <img src="@/assets/images/fence.png" alt="fence" />
         </Split>
 
-        <Split title="Depending on your needs, Gyptech offers the following:"
-            description="Teck Centennial Public Library provides free access to information, ideas, resources, facilities, services and programs that enrich the lives and empower the citizens of Kirkland Lake.">
+        <Split title="Gyptech supplies wallboard equipment including:"
+            >
             <img src="@/assets/images/fence.png" alt="fence" />
+            <template v-slot:extra-content>
+      <ArrowList :items="content" class="mb-6" />
+    </template>
         </Split>
     </Container>
 
@@ -41,6 +44,7 @@
 </template>
 
 <script setup>
+import ArrowList from '../../../components/base/ArrowList.vue'
 import Split from '../../../components/layouts/Split.vue'
 import Container from '../../../components/layouts/Container.vue'
 import Header from '../../../components/base/Header.vue'
@@ -102,4 +106,17 @@ const categories = [
         name: "equipment/solution"
     },
 ]
+
+const content = [
+  "Lorem ipsum dolor sit",
+  "Lorem ipsum dolor sit",
+  "Lorem ipsum dolor sit",
+  "Lorem ipsum dolor sit",
+  "Lorem ipsum dolor sit",
+  "Lorem ipsum dolor sit",
+  "Lorem ipsum dolor sit",
+  "Lorem ipsum dolor sit",
+  "Lorem ipsum dolor sit",
+  "Lorem ipsum dolor sit",
+];
 </script>
