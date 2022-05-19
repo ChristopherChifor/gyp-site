@@ -1,5 +1,12 @@
 <template>
-  <Header />
+  <HeroImageOverlay>
+    <div class="max-w-xl">
+      <h1 class="text-accent-lightest leading-tight">vancouver's premier Luxury car service</h1>
+      <p class="text-accent-lightest mt-2">
+        Professional team of chauffeurs providing exceptional services.
+      </p>
+    </div>
+  </HeroImageOverlay>
 
   <Split title="Hello World" />
   <router-link :to="{ name: 'about' }"> go to about </router-link>
@@ -27,7 +34,7 @@
 <script setup>
 import Container from "@/components/layouts/Container.vue";
 import Split from "@/components/layouts/Split.vue";
-import Header from "@/components/base/Header.vue";
+import HeroImageOverlay from "@/components/layouts/hero/HeroImageOverlay.vue";
 
 const glance = [
   {
