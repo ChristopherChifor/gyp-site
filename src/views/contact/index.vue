@@ -28,82 +28,43 @@
       </div>
       <div class="grid grid-cols-4 gap-8 w-1/2 justify-center">
         <div class="col-span-2">
-          First Name:
-          <textarea
-            class="border-accent-darkest"
-            name=""
-            id=""
-            cols="30"
-            rows="1"
-          ></textarea>
+          <label>
+            <span class="mb-0.5 inline-block"> First Name: </span>
+            <input class="border-accent-darkest" name="" id="" type="text" />
+          </label>
         </div>
         <div class="col-span-2">
-          Last Name:
-          <textarea
-            class="border-accent-darkest"
-            name=""
-            id=""
-            cols="30"
-            rows="1"
-          ></textarea>
+          <span class="mb-0.5 inline-block"> Last Name: </span>
+          <input class="border-accent-darkest" name="" id="" type="text" />
         </div>
         <div class="col-span-2">
-          Email Address:<textarea
-            class="border-accent-darkest"
-            name=""
-            id=""
-            cols="30"
-            rows="1"
-          ></textarea>
+          <span class="mb-0.5 inline-block"> Email Address: </span
+          ><input class="border-accent-darkest" name="" id="" type="email" />
         </div>
         <div class="col-span-2">
-          Phone Number:<textarea
-            class="border-accent-darkest"
-            name=""
-            id=""
-            cols="30"
-            rows="1"
-          ></textarea>
+          <span class="mb-0.5 inline-block"> Phone Number: </span>
+          <input class="border-accent-darkest" name="" id="" type="text" />
         </div>
         <div class="col-span-2">
-          City:<textarea
-            class="border-accent-darkest"
-            name=""
-            id=""
-            cols="30"
-            rows="1"
-          ></textarea>
+          <span class="mb-0.5 inline-block"> City: </span
+          ><input class="border-accent-darkest" name="" id="" type="text" />
         </div>
         <div class="col-span-2">
-          Country:<textarea
-            class="border-accent-darkest"
-            name=""
-            id=""
-            cols="30"
-            rows="1"
-          ></textarea>
+          <span class="mb-0.5 inline-block"> Country: </span
+          ><input class="border-accent-darkest" name="" id="" type="text" />
         </div>
         <div class="col-span-2">
-          Company:<textarea
-            class="border-accent-darkest"
-            name=""
-            id=""
-            cols="30"
-            rows="1"
-          ></textarea>
+          <span class="mb-0.5 inline-block"> Company: </span
+          ><input class="border-accent-darkest" name="" id="" type="text" />
         </div>
         <div class="col-span-2">
-          Subject:<textarea
-            class="border-accent-darkest"
-            name=""
-            id=""
-            cols="30"
-            rows="1"
-          ></textarea>
+          <span class="mb-0.5 inline-block"> Subject: </span
+          ><input class="border-accent-darkest" name="" id="" type="text" />
         </div>
 
         <div class="col-span-4">
-          Comments:<textarea
+          <span class="mb-0.5 inline-block"> Comments: </span
+          ><textarea
             class="border-accent-darkest"
             name=""
             id=""

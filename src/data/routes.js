@@ -200,7 +200,7 @@ export const ROUTES_SOURCE = [
     label: "news/post",
     name: "news/post",
     component: () => import("@/views/news/post/index.vue"),
-    meta: { title: "News" },
+    meta: { title: "News Post" },
   },
   {
     path: "/careers",

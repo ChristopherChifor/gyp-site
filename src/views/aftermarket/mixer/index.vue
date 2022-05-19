@@ -13,30 +13,30 @@
     <router-link class="btn btn-xl btn-light text-color-accent-dark" :to="{ name: 'contact' }">mixer boot contact form
     </router-link>
     <h2 class="pt-20">Single Mixer Boots</h2>
-    <div class="grid grid-cols-7">
-      <div class="col-span-2 flex items-center">
-        <img class="w-3/5" src="@/assets/images/pipe.png" alt="pipe" />
+    <div class="grid lg:grid-cols-7">
+      <div class="lg:col-span-2 flex items-center">
+        <img class="" src="@/assets/images/pipe.png" alt="pipe" />
       </div>
-      <div class="col-span-5">
+      <div class="lg:col-span-5 w-full overflow-auto">
         <SimpleStripedTable :headers="headers" :items="items" class="object-cover" />
       </div>
     </div>
     <h2 class="pt-8">Pant Leg Mixer Boots</h2>
-    <div class="grid grid-cols-7">
-      <div class="col-span-2 flex items-center">
-        <img class="w-3/5 " src="@/assets/images/pipe.png" alt="pipe" />
+    <div class="grid lg:grid-cols-7">
+      <div class="lg:col-span-2 flex items-center">
+        <img class="" src="@/assets/images/pipe.png" alt="pipe" />
       </div>
-      <div class="col-span-5">
-        <SimpleStripedTable :headers="headers" :items="items" />
+      <div class="lg:col-span-5 w-full overflow-auto">
+        <SimpleStripedTable :headers="headers" :items="items" class="object-cover" />
       </div>
     </div>
     <h2 class="pt-8">Dual Stream Mixer Boots</h2>
-    <div class="grid grid-cols-7">
-      <div class="col-span-2 flex items-center">
-        <img class="w-3/5" src="@/assets/images/pipe.png" alt="pipe" />
+    <div class="grid lg:grid-cols-7">
+      <div class="lg:col-span-2 flex items-center">
+        <img class="" src="@/assets/images/pipe.png" alt="pipe" />
       </div>
-      <div class="col-span-5">
-        <SimpleStripedTable :headers="headers" :items="items" />
+      <div class="lg:col-span-5 w-full overflow-auto">
+        <SimpleStripedTable :headers="headers" :items="items" class="object-cover" />
       </div>
     </div>
   </Container>

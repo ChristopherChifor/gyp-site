@@ -1,16 +1,19 @@
 <template>
   <HeroImageOverlay>
-    <div class="max-w-xl bg-red-500">
-      <h1 class="text-accent-lightest leading-tight">vancouver's premier Luxury car service</h1>
-      <p class="text-accent-lightest mt-2">
-        Professional team of chauffeurs providing exceptional services.
-      </p>
+    <div class="max-w-xl">
+      <h1 class="text-accent-lightest leading-tight">Turn-Key Solutions</h1>
+      <h2 class="text-accent-lightest mt-2">
+        for Wallboard Manufacturing.
+        <p class="text-accent-lightest mt-2">
+          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+          cupidatat commodo ad non deserunt suntui irure qui lorem.
+        </p>
+      </h2>
     </div>
   </HeroImageOverlay>
 
-  <Split title="Hello World" />
-  <router-link :to="{ name: 'about' }"> go to about </router-link>
-
+  <OverlapImageCTA />
+  
   <Container class="bg-accent-lightest">
     <h2>At A Glance</h2>
     <div class="grid grid-cols-4 gap-8">
@@ -21,11 +24,11 @@
           {{ item.description }}
         </p>
         <div class="todo">do paths and images</div>
-        <!-- <router-link :to="{ name: item.path }">
+        <router-link :to="{ name: item.path }">
           <p class="text-sm max-w-sm">
-          hi
+          Learn More
           </p>
-        </router-link> -->
+        </router-link>
       </div>
     </div>
   </Container>
@@ -33,37 +36,41 @@
 
 <script setup>
 import Container from "@/components/layouts/Container.vue";
-import Split from "@/components/layouts/Split.vue";
 import HeroImageOverlay from "@/components/layouts/hero/HeroImageOverlay.vue";
+import OverlapImageCTA from "@/components/layouts/cta/OverlapImageCTA.vue";
+
+const getImage = (name) => {
+  return new URL(`../../assets/${name}`, import.meta.url).href;
+};
 
 const glance = [
   {
-    image: "@/assets/images/fence.png",
+    image: getImage("/images/fence.png"),
     title: "Wallboard & plaster Plants",
     description:
       "Turnkey or upgrade, our complete solutions take you from raw gypsum to a superior finished product.",
-    path: "#",
+    path: "home",
   },
   {
-    image: "@/assets/images/fence.png",
+    image: getImage("/images/fence.png"),
     title: "Why Choose Gyptech?",
     description:
       "Our plants lead the industry for a reason; superior machinery backed by seasoned professionals.",
-    path: "#",
+    path: "home",
   },
   {
-    image: "@/assets/images/fence.png",
+    image: getImage("/images/fence.png"),
     title: "Gyptech Equipment",
     description:
       "We supply only equipment that adheres to our strict standard of quality and performance.",
-    path: "#",
+    path: "home",
   },
   {
-    image: "@/assets/images/fence.png",
+    image: getImage("/images/fence.png"),
     title: "Gyptech Replacement Parts",
     description:
       "Gyptech is making it easier to order spare parts. Learn more about our customer service department.",
-    path: "#",
+    path: "home",
   },
 ];
 </script>
