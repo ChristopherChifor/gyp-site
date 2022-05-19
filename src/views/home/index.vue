@@ -8,7 +8,7 @@
     <h2>At A Glance</h2>
     <div class="grid grid-cols-4 gap-8">
       <div v-for="(item, index) in glance" :key="index">
-        <img src="{{item.image}}" alt="" />
+        <img :src="item.image" :key="index" alt="" />
         <h3 class="text-lg mb-1">{{ item.title }}</h3>
         <p class="text-sm max-w-sm">
           {{ item.description }}
