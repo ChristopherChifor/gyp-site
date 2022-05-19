@@ -196,6 +196,13 @@ export const ROUTES_SOURCE = [
     meta: { title: "News" },
   },
   {
+    path: "/news/overview",
+    label: "news/overview",
+    name: "news/overview",
+    component: () => import("@/views/news/overview/index.vue"),
+    meta: { title: "News" },
+  },
+  {
     path: "/careers",
     label: "careers",
     name: "careers",
@@ -208,6 +215,13 @@ export const ROUTES_SOURCE = [
     name: "careers/post",
     component: () => import("@/views/careers/post/index.vue"),
     meta: { title: "equi" },
+  },
+  {
+    path: "/careers/overview",
+    label: "careers/overview",
+    name: "careers/overview",
+    component: () => import("@/views/careers/overview/index.vue"),
+    meta: { title: "Careers" },
   },
   {
     path: "/contact",

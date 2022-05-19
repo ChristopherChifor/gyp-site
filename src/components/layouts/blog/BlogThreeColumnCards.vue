@@ -31,13 +31,8 @@
         </div>
         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
           <div class="flex-1">
-            <p class="text-sm font-medium text-accent">
-              <router-link :to="post.href" class="hover:underline">
-                {{ post.category.name }}
-              </router-link>
-            </p>
             <router-link :to="post.href" class="block mt-2">
-              <p class="text-xl font-semibold text-gray-900">
+              <p class="text-xl font-semibold text-accent underline">
                 {{ post.title }}
               </p>
               <p class="mt-3 text-base text-gray-500">
@@ -49,11 +44,6 @@
             <div class="flex-shrink-0">
               <router-link :to="post.href">
                 <span class="sr-only">{{ post.author.name }}</span>
-                <img
-                  class="h-10 w-10 rounded-full"
-                  :src="post.author.imageUrl"
-                  alt=""
-                />
               </router-link>
             </div>
             <div class="ml-3">
@@ -66,8 +56,6 @@
                 <time :datetime="post.datetime">
                   {{ post.date }}
                 </time>
-                <span aria-hidden="true"> &middot; </span>
-                <span> {{ post.readingTime }} read </span>
               </div>
             </div>
           </div>
@@ -91,12 +79,9 @@ const defaultPosts = [
     datetime: "2020-03-16",
     imageUrl:
       "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "6 min",
     author: {
       name: "Roel Aufderehar",
       href: "/news/details",
-      imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
   {
@@ -109,12 +94,9 @@ const defaultPosts = [
     datetime: "2020-03-10",
     imageUrl:
       "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "4 min",
     author: {
       name: "Brenna Goyette",
       href: "/news/details",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
   {
@@ -127,12 +109,9 @@ const defaultPosts = [
     datetime: "2020-02-12",
     imageUrl:
       "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "11 min",
     author: {
       name: "Daniela Metz",
       href: "/news/details",
-      imageUrl:
-        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
     },
   },
 ];
@@ -146,12 +125,9 @@ export default {
     },
     title: {
       type: String,
-      default: "From the Blog",
     },
     description: {
       type: String,
-      default:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.",
     },
     showHeading: {
       type: Boolean,
